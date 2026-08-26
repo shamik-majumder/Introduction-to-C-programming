@@ -267,5 +267,3 @@ If this repository helps you learn C programming, consider giving it a ⭐ on Gi
 
 **Happy Coding! 💻**
 
-> Learn the concept → Write the code → Compile → Debug → Practice → Repeat.
-
