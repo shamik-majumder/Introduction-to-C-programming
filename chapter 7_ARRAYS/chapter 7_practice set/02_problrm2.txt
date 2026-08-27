@@ -1,0 +1,35 @@
+If S[3] is a 1-D array of integers then *(S+3) refers to the third element: 
+(i) True. 
+(ii)  False.
+(iii)  Depends.
+
+ans -> (ii)  False.
+
+In C, array indexing is zero-based.
+
+If:
+
+int S[5] = {10, 20, 30, 40, 50};
+
+
+Then:
+
+Expression	Refers to
+S or &S[0]	first element
+*(S + 0)	S[0] → 10
+*(S + 1)	S[1] → 20
+*(S + 2)	S[2] → 30
+*(S + 3)	S[3] → fourth element
+
+So:
+
+Third element → S[2] → *(S + 2)
+
+*(S + 3) → fourth element
+
+Key rule to remember (very exam-friendly)
+*(S + i)  ≡  S[i]
+
+
+Index i always counts from 0, not 1.
+
