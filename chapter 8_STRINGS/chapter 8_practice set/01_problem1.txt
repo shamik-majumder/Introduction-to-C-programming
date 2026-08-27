@@ -1,0 +1,34 @@
+Which of the following is used to appropriately read a multi-word string. 
+1. gets() 
+2. puts() 
+3. printf() 
+4. scanf() 
+
+ans -> 1. gets() 
+
+gets() reads an entire line including spaces until a newline is encountered.
+
+That makes it capable of reading multi-word strings like:
+
+Hello World from C
+
+Why the others are wrong
+
+puts()
+❌ Used to display a string, not read it.
+
+printf()
+❌ Used for output, not input.
+
+scanf()
+❌ With %s, it stops reading at the first space:
+
+scanf("%s", str);  // reads only "Hello"
+
+Important real-world note (not usually tested)
+
+Although gets() is the correct MCQ answer, it is unsafe and removed from modern C standards due to buffer overflow issues.
+
+✔️ In real programs, use:
+
+fgets(str, sizeof(str), stdin);
